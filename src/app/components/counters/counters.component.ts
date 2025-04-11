@@ -12,6 +12,23 @@ export class CountersComponent {
 
   textToCount = input<string>();
 
-  wordsNumber = computed(() => '' + this.textToCount.length)
+  wordsNumber = computed(() => this.countWords(this.textToCount()))
+  charsNumber = computed(() => this.countChars(this.textToCount()))
+
+  countWords(text: string | undefined): number {
+    if(text){
+      const wordsArray = text.trim().split(/\s+/g);
+      return wordsArray.length;
+    }
+    return 0;
+  }
+
+  countChars(text: string | undefined): number{
+    if(text){
+      const textNoSpaces = text.trim().replace(/\s+/g,'');
+      return textNoSpaces.length;
+    }
+    return 0;
+  }
 
 }
