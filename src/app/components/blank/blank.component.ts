@@ -14,13 +14,15 @@ export class BlankComponent {
 
   textEvent = output<string>()
 
-  getText() {
-    const element: HTMLElement | null = document.querySelector('.container');
+  readText() {
+    const element: HTMLElement | null = document.querySelector('.blank-container');
     if (element) {
       const text = element.innerText;
-      this.service.loadText(text);
-      this.textEvent.emit(text);
+      console.log('dentro div: <' + text + '>');
+      if(text){
+        this.service.loadText(text,0);
+        this.textEvent.emit(text);
+      }
     }
   }
-
 }

@@ -18,7 +18,9 @@ export class CountersComponent {
   countWords(text: string | undefined): number {
     if(text){
       const wordsArray = text.trim().split(/\s+/g);
-      return wordsArray.length;
+      if(wordsArray[0] !== ""){
+        return wordsArray.length;
+      }
     }
     return 0;
   }

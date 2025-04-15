@@ -1,2 +1,5 @@
-<app-blank (textEvent)="setTextRealTime($event)"></app-blank>
-<app-counters [textToCount]="textRealTime"></app-counters>
+<div class="container">
+    <app-notes></app-notes>
+    <app-blank (textEvent)="setTextRealTime($event)"></app-blank>
+    <app-counters [textToCount]="textRealTime"></app-counters>
+</div>
