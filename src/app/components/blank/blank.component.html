@@ -1,1 +1,9 @@
-<div class="blank-container" contenteditable (input)="readText()"></div>
+<div class="container">
+    <div class="blank-container" contenteditable
+    (input)="dispatchText(); this.isNeverTouched = false"
+    (mouseenter)="onMouseEnter()"
+    (mouseleave)="onMouseLeave()"
+    (blur)="onBlur()"
+    [ngStyle]="currentStyles">
+    </div>
+</div>
