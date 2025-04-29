@@ -1,1 +1,6 @@
-da migliorare css, aggiungere dark mode, e e gestione lista note
+- migliorare css
+- aggiungere dark mode
+- gestione lista note (nuova nota con data o timestamp)
+- migliorare logica bottoni italic e bold, sovrascrivere e fare toggle
+- aggiungere darkmode
+- quando fa download usare markdown

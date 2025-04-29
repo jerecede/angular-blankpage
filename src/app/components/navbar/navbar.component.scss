@@ -1,5 +1,5 @@
 .container{
-    height: 85px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,4 +17,10 @@ span{
     flex-direction: row;
     gap: 10px;
     margin: 15px;
+}
+
+button{
+    border: 0px;
+    padding: 5px;
+    border-radius: 10px;
 }
