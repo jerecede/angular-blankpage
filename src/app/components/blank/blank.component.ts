@@ -16,7 +16,7 @@ export class BlankComponent {
   textEvent = output<string>();
 
   idTimeOut = -1;
-  timerToAutoSave = 4000 //millisecond
+  timerToAutoSave = 20000 //millisecond
 
   isNeverTouched = true;
 
