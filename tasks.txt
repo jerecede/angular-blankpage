@@ -4,3 +4,4 @@
 - migliorare logica bottoni italic e bold, sovrascrivere e fare toggle
 - aggiungere darkmode
 - quando fa download usare markdown
+- quando va accapo creaun div, non piu testo
